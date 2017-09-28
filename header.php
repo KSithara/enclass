@@ -248,7 +248,7 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a class="active-menu" href="index.php"><i class="fa fa-dashboard"></i> Dashboard</a>
+                        <a href="index.php"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="add.php"><i class="fa fa-desktop"></i> Add Students</a>
