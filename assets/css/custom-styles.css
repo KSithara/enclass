@@ -235,14 +235,14 @@ max-width:170px;
 .top-navbar{
 margin:0px;
 }
-.top-navbar .navbar-brand {
+.top-navbar .navbar-brand-new {
 color: #fff;
 width: 260px;
 text-align: left;
 height: 60px;
 font-size: 30px;
 font-weight: 700;
-text-transform: uppercase;
+/*text-transform: uppercase;*/
 line-height: 30px;
 }
 .top-navbar .nav > li {

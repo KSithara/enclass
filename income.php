@@ -20,7 +20,7 @@
                     </li>
                     
                     <li>
-                        <a class="active-menu" href="vacation.php"><i class="fa fa-table"></i> Vacation time table</a>
+                        <a class="active-menu" href="income.php"><i class="fa fa-table"></i> Income</a>
                     </li>
                     <li>
                         <a href="form.php"><i class="fa fa-desktop"></i> Forms </a>

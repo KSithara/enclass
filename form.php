@@ -19,40 +19,13 @@
                     </li>
                     
                     <li>
-                        <a href="vacation.php"><i class="fa fa-table"></i> Vacation time table</a>
+                        <a href="income.php"><i class="fa fa-table"></i> Income</a>
                     </li>
                     <li>
                         <a class="active-menu" href="form.php"><i class="fa fa-desktop"></i> Forms </a>
                     </li>
 
 
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#">Second Level Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Link</a>
-                            </li>
-                            <li>
-                                <a href="#">Second Level Link<span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Link</a>
-                                    </li>
-
-                                </ul>
-
-                            </li>
-                        </ul>
-                    </li>
                     <li>
                         <a href="empty.php"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                     </li>
