@@ -13,6 +13,9 @@
                         <a href="add.php"><i class="fa fa-edit"></i> Add Students</a>
                     </li>
                     <li>
+                        <a href="profile.php"><i class="fa fa-desktop"></i> Student Profile </a>
+                    </li>
+                    <li>
                         <a href="view.php"><i class="fa fa-bar-chart-o"></i> View Classes</a>
                     </li>
                     <li>
@@ -22,9 +25,7 @@
                     <li>
                         <a class="active-menu" href="income.php"><i class="fa fa-table"></i> Income</a>
                     </li>
-                    <li>
-                        <a href="form.php"><i class="fa fa-desktop"></i> Forms </a>
-                    </li>
+                    
 
 
                     

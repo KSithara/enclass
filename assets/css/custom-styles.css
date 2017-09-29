@@ -38,6 +38,7 @@ body {
     border:1px solid #f3f3f3;
 }
 
+
 h1, .h1, h2, .h2, h3, .h3 {
 margin-top: 7px;
 margin-bottom: -5px;
@@ -219,6 +220,9 @@ color: #8d8888;
 footer p{
 font-size: 14px;
 }
+
+
+
 /*----------------------------------------------
     MENU STYLES    
 ------------------------------------------------*/
@@ -364,6 +368,7 @@ margin: 8px 0;
 }
 .navbar-default {
 border:0px solid black;
+height:100px;
      
 }
 .navbar-header {

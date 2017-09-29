@@ -12,10 +12,10 @@
                         <a href="add.php"><i class="fa fa-edit"></i> Add Students</a>
                     </li>
                     <li>
-                        <a href="profile.php"><i class="fa fa-desktop"></i> Student Profile </a>
+                        <a class="active-menu" href="profile.php"><i class="fa fa-desktop"></i> Student Profile </a>
                     </li>
                     <li>
-                        <a class="active-menu" href="view.php"><i class="fa fa-bar-chart-o"></i> View Classes</a>
+                        <a href="view.php"><i class="fa fa-bar-chart-o"></i> View Classes</a>
                     </li>
                     <li>
                         <a href="time.php"><i class="fa fa-qrcode"></i> Time table</a>
@@ -27,7 +27,6 @@
                     
 
 
-                   
                     <li>
                         <a href="empty.php"><i class="fa fa-fw fa-file"></i> Empty Page</a>
                     </li>
@@ -39,21 +38,28 @@
 
 
         
+
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
             <div id="page-inner">
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                            Classes <small>Show up your class details</small>
+                            Student Profile
                         </h1>
                     </div>
                 </div> 
                  <!-- /. ROW  -->
-             
-                
 
-                
+
+
+
+
+
+
+
+                 
+              
 
 
 <?php include("footer.php") ?>

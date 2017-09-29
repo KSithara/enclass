@@ -27,7 +27,7 @@
 <body>
     <div id="wrapper">
         <nav class="navbar navbar-default top-navbar" role="navigation">
-            <a class="navbar-brand-new" href="index.php">Bright Way English Academy</a>
+            <a class="navbar-brand-new" href="index.php"><strong><h1>Bright Way English Academy</h1></strong></a>
             
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
