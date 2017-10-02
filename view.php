@@ -60,37 +60,37 @@
                         <div class="panel panel-default col-lg-6 col-lg-offset-3">
                             <div class="panel-body">
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 1</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #b40404">Grade 1</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 2</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #b45f04">Grade 2</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 3</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #aeb404">Grade 3</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 4</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #5fb404">Grade 4</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 5</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #04b431">Grade 5</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 6</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #04b4ae">Grade 6</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 7</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #0431b4">Grade 7</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 8</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #5f04b4">Grade 8</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 9</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #b404ae">Grade 9</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 10</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #b4045f">Grade 10</button>
                                 </div>
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default">Grade 11</button>
+                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #585858">Grade 11</button>
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->
 

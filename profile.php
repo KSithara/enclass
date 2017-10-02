@@ -82,11 +82,11 @@
 
 
                 <div class="row two">
-                    <div class="panel panel-default col-lg-12">
+                    <div class="panel panel-default col-sm-12">
                         <div class="panel-heading">
                              Payemnt details per year
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body col-sm-12">
                             <center>
 
                             <button type="#" class="btn but butt btn-default">Jan</button>
