@@ -1,5 +1,45 @@
 ﻿<?php include("header.php") ?>
 
+
+
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th{
+    text-align: center;
+    font-size: 20px;
+    font-family:  'Open Sans', sans-serif;
+}
+td{
+    text-align: left; 
+    padding: 10px  
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th {
+    background-color: #424242;
+    color: white;
+}
+.two{
+    padding-top: 100px;
+}
+#c{
+    text-align: center;
+}
+</style>
+
 <!--/. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
@@ -53,7 +93,133 @@
 
 
 
+                 <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                        <center>
+                            Search bar
+                        </center>
+                        </h1>
+                    </div>
+                </div>
 
+
+
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default ">
+                            <div class="panel-heading">
+                                Payemnt details per year<br>
+                            </div>
+
+
+                            <div class="panel-body">
+                                <div class="row">
+                                        
+
+                                    <table id="t01">
+                                      <tr>
+                                        <th>Jan</th>
+                                        <th>Feb</th> 
+                                        <th>Mar</th>
+                                        <th>April</th> 
+                                        <th>May</th>
+                                        <th>June</th> 
+                                        <th>July</th>
+                                        <th>Aug</th> 
+                                        <th>Sep</th>
+                                        <th>Oct</th> 
+                                        <th>Nov</th>
+                                        <th>Dec</th> 
+                                      </tr>
+                                      <tr>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td id="c"></td>
+                                        <td></td>
+                                      </tr>
+                                    </table>
+
+
+
+
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+
+
+
+
+
+                <div class="row two">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default col-lg-8 col-lg-offset-2">
+                            <div class="panel-heading">
+                                Basic information of students<br>
+                            </div>
+
+
+                            <div class="panel-body">
+                                <div class="row">
+                                        
+
+                                    <table id="t01">
+                                      <tr>
+                                        <th id="c">Field</th>
+                                        <th>Data</th> 
+                                      </tr>
+                                      <tr>
+                                        <td id="c">Name</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td id="c">Grade</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td id="c">Class</td>
+                                        <td>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</td>
+                                      </tr>
+                                      <tr>
+                                        <td id="c">School</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td id="c">Tp.No.</td>
+                                        <td></td>
+                                      </tr>
+                                    </table>
+
+
+
+
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
 
 
 
