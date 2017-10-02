@@ -32,13 +32,48 @@ table#t01 th {
     background-color: #424242;
     color: white;
 }
-.two{
+.two {
+    padding-top: 100px;
+}
+.one {
     padding-top: 100px;
 }
 #c{
     text-align: center;
 }
+.btn-huge{
+    padding-top:20px;
+    padding-bottom:40px;
+    font-size: 30px
+}
+
+
+/*-----------------------
+     Search bar
+-------------------------*/
+
+.add-on .input-group-btn > .btn {
+  border-left-width:0;left:-2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none; 
+ border-color:#cccccc; 
+}
+.form-control{width:20%}
+
 </style>
+
+
+
+
+
+
+
+
 
 <!--/. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">
@@ -94,20 +129,29 @@ table#t01 th {
 
 
                  <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="page-header">
-                        <center>
-                            Search bar
-                        </center>
-                        </h1>
+                    <center>
+
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <div class="row">
+                            <form class="navbar-form" role="search">
+                                <div class="input-group add-on">
+                                  <input class="form-control" placeholder="Enter the Student's name" name="srch-term" id="srch-term" type="text">
+                                  <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                  </div>
+                                </div>
+                            </form>
+                       
+                        </div>
                     </div>
+                 </center>
                 </div>
 
 
 
 
 
-                <div class="row">
+                <div class="row one">
                     <div class="col-lg-12">
                         <div class="panel panel-default ">
                             <div class="panel-heading">
