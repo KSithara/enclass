@@ -2,76 +2,6 @@
 
 
 
-<style>
-table {
-    width:100%;
-}
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-}
-th{
-    text-align: center;
-    font-size: 20px;
-    font-family:  'Open Sans', sans-serif;
-}
-td{
-    text-align: left; 
-    padding: 10px  
-}
-table#t01 tr:nth-child(even) {
-    background-color: #eee;
-}
-table#t01 tr:nth-child(odd) {
-   background-color:#fff;
-}
-table#t01 th {
-    background-color: #424242;
-    color: white;
-}
-.two {
-    padding-top: 100px;
-}
-.one {
-    padding-top: 100px;
-}
-#c{
-    text-align: center;
-}
-.btn-huge{
-    padding-top:20px;
-    padding-bottom:40px;
-    font-size: 30px
-}
-
-
-/*-----------------------
-     Search bar
--------------------------*/
-
-.add-on .input-group-btn > .btn {
-  border-left-width:0;left:-2px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-/* stop the glowing blue shadow */
-.add-on .form-control:focus {
- box-shadow:none;
- -webkit-box-shadow:none; 
- border-color:#cccccc; 
-}
-.form-control{width:20%}
-
-</style>
-
-
-
-
-
-
 
 
 
@@ -131,7 +61,7 @@ table#t01 th {
                  <div class="row">
                     <center>
 
-                    <div class="col-lg-6 col-lg-offset-3">
+                    <div class="col-lg-4 col-lg-offset-4">
                         <div class="row">
                             <form class="navbar-form" role="search">
                                 <div class="input-group add-on">
@@ -151,84 +81,53 @@ table#t01 th {
 
 
 
-                <div class="row one">
-                    <div class="col-lg-12">
-                        <div class="panel panel-default ">
-                            <div class="panel-heading">
-                                Payemnt details per year<br>
-                            </div>
-
-
-                            <div class="panel-body">
-                                <div class="row">
-                                        
-
-                                    <table id="t01">
-                                      <tr>
-                                        <th>Jan</th>
-                                        <th>Feb</th> 
-                                        <th>Mar</th>
-                                        <th>April</th> 
-                                        <th>May</th>
-                                        <th>June</th> 
-                                        <th>July</th>
-                                        <th>Aug</th> 
-                                        <th>Sep</th>
-                                        <th>Oct</th> 
-                                        <th>Nov</th>
-                                        <th>Dec</th> 
-                                      </tr>
-                                      <tr>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td id="c"></td>
-                                        <td></td>
-                                      </tr>
-                                    </table>
-
-
-
-
-                                </div>
-                                <!-- /.col-lg-6 (nested) -->
-
-                            </div>
-                            <!-- /.row (nested) -->
+                <div class="row two">
+                    <div class="panel panel-default col-lg-12">
+                        <div class="panel-heading">
+                             Payemnt details per year
                         </div>
-                        <!-- /.panel-body -->
+                        <div class="panel-body">
+                            <center>
+
+                            <button type="#" class="btn but butt btn-default">Jan</button>
+                            <button type="#" class="btn but butt btn-default">Feb</button>
+                            <button type="#" class="btn but butt btn-default">March</button>
+                            <button type="#" class="btn but butt btn-default">April</button>
+                            <button type="#" class="btn but butt btn-default">May</button>
+                            <button type="#" class="btn but butt btn-default">June</button>
+                            <button type="#" class="btn but butt btn-default">July</button>
+                            <button type="#" class="btn but butt btn-default">Aug</button>
+                            <button type="#" class="btn but butt btn-default">Sep</button>
+                            <button type="#" class="btn but butt btn-default">Oct</button>
+                            <button type="#" class="btn but butt btn-default">Nov</button>
+                            <button type="#" class="btn but butt btn-default">Dec</button>
+                            
+                            </center>
+                        </div>
+                                <!-- /.col-lg-6 (nested) -->
                     </div>
-                    <!-- /.panel -->
+                            <!-- /.row (nested) -->
                 </div>
 
 
 
 
 
-                <div class="row two">
-                    <div class="col-lg-12">
-                        <div class="panel panel-default col-lg-8 col-lg-offset-2">
-                            <div class="panel-heading">
-                                Basic information of students<br>
-                            </div>
-
-
-                            <div class="panel-body">
-                                <div class="row">
-                                        
-
-                                    <table id="t01">
-                                      <tr>
-                                        <th id="c">Field</th>
-                                        <th>Data</th> 
-                                      </tr>
+            <div class="row two">
+                <div class="panel panel-default col-lg-8 col-lg-offset-2">
+                        <div class="panel-heading">
+                             Basic information about students
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Field</th>
+                                            <th>Information</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
                                       <tr>
                                         <td id="c">Name</td>
                                         <td></td>
@@ -249,10 +148,8 @@ table#t01 th {
                                         <td id="c">Tp.No.</td>
                                         <td></td>
                                       </tr>
+                                    </tbody>
                                     </table>
-
-
-
 
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->
@@ -263,8 +160,6 @@ table#t01 th {
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-                </div>
-
 
 
 
@@ -273,3 +168,14 @@ table#t01 th {
 
 
 <?php include("footer.php") ?>
+
+
+
+
+
+
+/*color should change to red when not paid and green when paid
+  a box with paid date should be appear when hover the button */
+
+
+

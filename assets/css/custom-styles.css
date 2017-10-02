@@ -61,6 +61,7 @@ p {
     line-height:25px;
     padding-top:20px;
 }
+
 /*----------------------------------------------
    DASHBOARD STYLES    
 ------------------------------------------------*/
@@ -439,6 +440,52 @@ font-size: 19px;
 
 
 /*---------------------------
-          Search box
+          buttons
 -----------------------------*/
 
+.but{
+    background-color: #225081;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px;
+    color: #fff;
+    border-radius: 5px;    
+}
+.butt{
+    width:8%;
+    background-color: #784512;
+}
+.btn-long{
+    width:100%;
+    background-color: green;
+}
+.line{
+    padding: 10px;
+}
+
+
+
+/*-------------------------
+        profile
+---------------------------*/
+.two {
+    padding-top: 100px;
+
+
+
+                /*-----------------------
+                     Search bar
+                -------------------------*/
+
+.add-on .input-group-btn > .btn {
+  border-left-width:0;left:-2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none; 
+ border-color:#cccccc; 
+}
+.form-control{width:20%}

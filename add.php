@@ -132,8 +132,8 @@
                                         </div>
 
                                         <center>
-                                            <button type="submit" class="btn btn-default">Submit Button</button>
-                                            <button type="reset" class="btn btn-default">Reset Button</button>
+                                            <button type="submit" class="btn but btn-default">Submit Button</button>
+                                            <button type="reset" class="btn but btn-default">Reset Button</button>
                                         </center>
                                     </form>
                                 </div>

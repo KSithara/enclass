@@ -51,6 +51,56 @@
                 </div> 
                  <!-- /. ROW  -->
              
+
+
+
+
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default col-lg-6 col-lg-offset-3">
+                            <div class="panel-body">
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 1</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 2</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 3</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 4</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 5</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 6</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 7</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 8</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 9</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 10</button>
+                                </div>
+                                <div class="line">
+                                    <button type="#" class="btn but btn-long btn-default">Grade 11</button>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
                 
 
                 
