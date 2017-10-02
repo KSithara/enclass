@@ -63,14 +63,17 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default col-lg-6 col-lg-offset-3">
                         <div class="panel-heading">
-                            Basic information of students
+                            Basic information of students<br>
                         </div>
-
+                        <div style="text-align: right;">
+                            <small><i>All the fields are compulsary!</i></small>
+                        </div>
 
 
                         <div class="panel-body">
                             <div class="row">
                                     <form role="form">
+
                                         <div class="form-group">
                                             <label>Name</label>
                                             <input class="form-control" placeholder="Student name">
@@ -78,6 +81,10 @@
                                         <div class="form-group">
                                             <label>School</label>
                                             <input class="form-control" placeholder="School name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Gurdian's phone number</label>
+                                            <input class="form-control" placeholder="Phone number">
                                         </div>
                                         
 
@@ -105,13 +112,15 @@
                                             <div class="form-group">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">1
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">class 1
                                                         </label>
+                                                        <label> - time 1 </label>
                                                     </div>
                                                     <div class="radio">
                                                         <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">2
+                                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">class 2
                                                         </label>
+                                                        <label> - time 2  </label>
                                                     </div>
                                                 </div>
                                         </div>

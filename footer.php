@@ -2,7 +2,7 @@
 
 
                 <!-- /. ROW  -->
-				<footer><center><p>All right reserved. Template by: <a href="http://webthemez.com">WebThemez</a></p></center></footer>
+				<footer class="foot"><center><p>All right reserved. Template by: <a href="http://webthemez.com">WebThemez</a></p></center></footer>
             </div>
             <!-- /. PAGE INNER  -->
         </div>
