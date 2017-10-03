@@ -56,8 +56,8 @@
 
 
                  <div class="row">
-                    <div class="col-lg-12">
-                        <div class="panel panel-default col-lg-6 col-lg-offset-3">
+                    <div class="col-lg-2">
+                        <div class="panel panel-default col-lg-12">
                             <div class="panel-body">
                                 <div class="line">
                                     <button type="#" class="btn but btn-long btn-default" style="background-color: #b40404">Grade 1</button>
@@ -93,17 +93,86 @@
                                     <button type="#" class="btn but btn-long btn-default" style="background-color: #585858">Grade 11</button>
                                 </div>
                                 <!-- /.col-lg-6 (nested) -->
-
                             </div>
                             <!-- /.row (nested) -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
+
+
+
+
+
+
+                    <div class="col-lg-10">
+                        <div class="panel panel-default col-lg-12">
+                            <div class="panel-body">
+                                <div class="panel-heading">
+                             Basic information about students
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Field</th>
+                                            <th>Information</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td id="c">Name</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td id="c">Grade</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td id="c">Class</td>
+                                        <td>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</td>
+                                      </tr>
+                                      <tr>
+                                        <td id="c">School</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td id="c">Tp.No.</td>
+                                        <td></td>
+                                      </tr>
+                                    </tbody>
+                                    </table>
+
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+
+                            </div>
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
                 </div>
                 
 
                 
 
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+});
+</script>
+
 
 <?php include("footer.php") ?>
+
+
+
+
+
+
+/*The list of students in each class should appear when clicked on the buttons*/
