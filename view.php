@@ -56,116 +56,103 @@
 
 
                  <div class="row">
-                    <div class="col-lg-2">
-                        <div class="panel panel-default col-lg-12">
+                        <div class="panel panel-default">
                             <div class="panel-body">
                                 <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #b40404">Grade 1</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #b45f04">Grade 2</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #aeb404">Grade 3</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #5fb404">Grade 4</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #04b431">Grade 5</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #04b4ae">Grade 6</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #0431b4">Grade 7</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #5f04b4">Grade 8</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #b404ae">Grade 9</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #b4045f">Grade 10</button>
-                                </div>
-                                <div class="line">
-                                    <button type="#" class="btn but btn-long btn-default" style="background-color: #585858">Grade 11</button>
-                                </div>
+                                <center>
+                                    <button type="#" class="btn but b1 btn-long btn-default">Grade 1</button>
+                                    <button type="#" class="btn but b2 btn-long btn-default">Grade 2</button>
+                                    <button type="#" class="btn but b3 btn-long btn-default">Grade 3</button>
+                                    <button type="#" class="btn but b4 btn-long btn-default">Grade 4</button>
+                                    <button type="#" class="btn but b5 btn-long btn-default">Grade 5</button>
+                                    <button type="#" class="btn but b6 btn-long btn-default">Grade 6</button>
+                                    <button type="#" class="btn but b7 btn-long btn-default">Grade 7</button>
+                                    <button type="#" class="btn but b8 btn-long btn-default">Grade 8</button>
+                                    <button type="#" class="btn but b9 btn-long btn-default">Grade 9</button>
+                                    <button type="#" class="btn but b10 btn-long btn-default">Grade 10</button>
+                                    <button type="#" class="btn but b11 btn-long btn-default">Grade 11</button>
                                 <!-- /.col-lg-6 (nested) -->
-                            </div>
-                            <!-- /.row (nested) -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-
-
-
-
-
-
-                    <div class="col-lg-10">
-                        <div class="panel panel-default col-lg-12">
-                            <div class="panel-body">
-                                <div class="panel-heading">
-                             Basic information about students
-                        </div>
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                    <thead>
-                                        <tr>
-                                            <th>Field</th>
-                                            <th>Information</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td id="c">Name</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td id="c">Grade</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td id="c">Class</td>
-                                        <td>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</td>
-                                      </tr>
-                                      <tr>
-                                        <td id="c">School</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td id="c">Tp.No.</td>
-                                        <td></td>
-                                      </tr>
-                                    </tbody>
-                                    </table>
-
+                                </center>
                                 </div>
-                                <!-- /.col-lg-6 (nested) -->
-
+                                <!-- /.row (nested) -->
                             </div>
-                                <!-- /.col-lg-6 (nested) -->
-                            </div>
-                            <!-- /.row (nested) -->
+                            <!-- /.panel-body -->
                         </div>
-                        <!-- /.panel-body -->
-                    </div>
+                        <!-- /.panel -->                    
                 </div>
-                
+                    
 
-                
 
-<script>
+
+
+
+
+                <div class="row two scroll">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="panel-heading">
+                                         Basic information about students
+                                    </div>
+                                    <div class="panel-body ">
+                                        <div class="table-responsive ">
+                                            <table class="table table-striped table-bordered table-hover " id="dataTables-example">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Jan</th>
+                                                        <th>Feb</th>
+                                                        <th>March</th>
+                                                        <th>April</th>
+                                                        <th>May</th>
+                                                        <th>June</th>
+                                                        <th>July</th>
+                                                        <th>Sep</th>
+                                                        <th>Oct</th>
+                                                        <th>Nov</th>
+                                                        <th>Dec</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td id="c">Name</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                  </tr>
+                                                  </tbody>
+                                                </table>
+
+                                            </div>
+                                            <!-- /.col-lg-6 (nested) -->
+
+                                        </div>
+                                    <!-- /.col-lg-6 (nested) -->
+                                </div>
+                                <!-- /.row (nested) -->
+                            </div>
+                            <!-- /.panel-body -->
+
+                    </div>
+
+
+
+
+
+<!--script>
 $(document).ready(function(){
     $("button").click(function(){
-        $("p").toggle();
+        $("table").toggle();
     });
 });
-</script>
+</script-->
 
 
 <?php include("footer.php") ?>

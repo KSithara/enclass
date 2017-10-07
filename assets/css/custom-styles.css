@@ -444,7 +444,7 @@ font-size: 19px;
 -----------------------------*/
 
 .but{
-    background-color: #225081;
+    background-color: #b40404;
     font-size: 15px;
     text-align: center;
     padding: 8px;
@@ -453,14 +453,47 @@ font-size: 19px;
 }
 .butt{
     width:8%;
-    background-color: #784512;
 }
 .btn-long{
-    width:100%;
-    background-color: green;
-}
-.line{
+    width:8%;
     padding: 10px;
+}
+.btn-default:hover {
+color: black;
+background-color: #bbb;
+}
+.badd{
+    background-color: #2e9afe;
+}
+.b2{
+    background-color: #b45f04;
+}
+.b3{
+    background-color: #aeb404;
+}
+.b4{
+    background-color: #5fb404;
+}
+.b5{
+    background-color: #04b431;
+}
+.b6{
+    background-color: #04b4ae;
+}
+.b7{
+   background-color: #0431b4;
+}
+.b8{
+    background-color: #5f04b4;
+}
+.b9{
+    background-color: #b404ae;
+}
+.b10{
+    background-color: #b4045f;
+}
+.b11{
+    background-color: #585858;
 }
 
 
@@ -489,3 +522,16 @@ font-size: 19px;
  border-color:#cccccc; 
 }
 .form-control{width:20%}
+
+
+
+
+/*-------------------------
+        Scroll bar
+---------------------------*/
+
+.scroll {
+    width: 100px;
+    border: thin solid black;
+    overflow-x: auto;
+}

@@ -86,7 +86,7 @@
                         <div class="panel-heading">
                              Payemnt details per year
                         </div>
-                        <div class="panel-body col-sm-12">
+                        <div class="panel-body col-xs-12">
                             <center>
 
                             <button type="#" class="btn but butt btn-default">Jan</button>

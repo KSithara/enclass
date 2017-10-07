@@ -143,3 +143,9 @@
 
 
 <?php include("footer.php") ?>
+
+
+
+
+
+the marking sheet for every class will be loaded according to the correct time

@@ -50,17 +50,12 @@
                 </div> 
                  <!-- /. ROW  -->
 				 
-					
-
-
-
 
 
 
 
 
             <div class="row">
-                <div class="col-lg-12">
                     <div class="panel panel-default col-lg-6 col-lg-offset-3">
                         <div class="panel-heading">
                             Basic information of students<br>
@@ -72,26 +67,26 @@
 
                         <div class="panel-body">
                             <div class="row">
-                                    <form role="form">
+                                    <form role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 
                                         <div class="form-group">
                                             <label>Name</label>
-                                            <input class="form-control" placeholder="Student name">
+                                            <input class="form-control" name="fnm" type="text" placeholder="Student name">
                                         </div>
                                         <div class="form-group">
                                             <label>School</label>
-                                            <input class="form-control" placeholder="School name">
+                                            <input class="form-control" name="fscl" type="text" placeholder="School name">
                                         </div>
                                         <div class="form-group">
                                             <label>Gurdian's phone number</label>
-                                            <input class="form-control" placeholder="Phone number">
+                                            <input class="form-control" name="ftel" type="text" placeholder="Phone number">
                                         </div>
                                         
 
                                         <div class="col-lg-4">
                                             <label>Grade</label>
                                             <div class="form-group">
-                                                <select class="doropdown form-control">
+                                                <select class="doropdown form-control" name="fgrd">
                                                     <option>1</option>
                                                     <option>2</option>
                                                     <option>3</option>
@@ -112,13 +107,13 @@
                                             <div class="form-group">
                                                 <div class="radio">
                                                     <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">class 1
+                                                        <input type="radio" name="fcls" id="optionsRadios1" value="option1" checked="">class 1
                                                         </label>
                                                         <label> - time 1 </label>
                                                     </div>
                                                     <div class="radio">
                                                         <label>
-                                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">class 2
+                                                        <input type="radio" name="fcls" id="optionsRadios2" value="option2">class 2
                                                         </label>
                                                         <label> - time 2  </label>
                                                     </div>
@@ -128,12 +123,12 @@
                                         
                                         <div class="form-group">
                                             <label>Home address</label>
-                                            <textarea class="form-control" rows="3"></textarea>
+                                            <textarea class="form-control" name="fadrs" rows="3"></textarea>
                                         </div>
 
                                         <center>
-                                            <button type="submit" class="btn but btn-default">Submit Button</button>
-                                            <button type="reset" class="btn but btn-default">Reset Button</button>
+                                            <button type="submit" name="submit" class="btn but badd btn-default" >Submit Button</button>
+                                            <button type="reset" name="reset" class="btn but badd btn-default" >Reset Button</button>
                                         </center>
                                     </form>
                                 </div>
@@ -143,13 +138,104 @@
                             <!-- /.row (nested) -->
                         </div>
                         <!-- /.panel-body -->
-                    </div>
                     <!-- /.panel -->
                 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
+<?php 
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "bwea";
+
+
+
+
+//create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+//check connection
+
+if($conn === false){
+    die("ERROR: could not connect".mysqli_connect_error());
+}
+
+
+
+
+
+if(isset($_POST['submit']))
+{
+    $nm = $_POST['fnm'];
+    $tel = $_POST['ftel'];
+    $adrs = $_POST['fadrs'];
+    $scl = $_POST['fscl'];
+    $grd = $_POST['fgrd'];
+    $cls = $_POST['fcls']; 
+
+    if ($nm != '' || $tel != '' || $adrs != '' || $scl != '' || $grd != '' || $cls != '')
+    {
+       $sql = "INSERT INTO students (dnm, dtel, dadrs, dscl, dgrd, dcls) VALUES ('$nm', '$tel', '$adrs', '$scl', '$grd', '$cls')"; 
+
+
+
+       mysqli_query($conn, $sql);
+        
+
+
+
+
+       echo "<br/> <span> Data inserted successfully</span>";
+    }
+    else
+    {
+        echo "Insertion failed";
+    }  
+}
+
+
+
+
+
+
+
+/*if(mysqli_query($conn, $sql)){
+   echo "1 record added";
+}else{
+ die ('Error: could not able to execute sql '. mysqli_error($conn));
+}*/
+
+
+//colse connection
+mysqli_close($conn);
+
+?>
+
+
+
+
+
+
+
+
+
+
 
 
 <?php include("footer.php") ?>
-
-
