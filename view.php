@@ -163,3 +163,4 @@ $(document).ready(function(){
 
 
 /*The list of students in each class should appear when clicked on the buttons*/
+<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
