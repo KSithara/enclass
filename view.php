@@ -1,4 +1,4 @@
-﻿<?php include("header.php") ?>
+<?php include("header.php") ?>
 
 <!--/. NAV TOP  -->
         <nav class="navbar-default navbar-side" role="navigation">

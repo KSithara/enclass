@@ -143,6 +143,69 @@
 
 
 
+<<<<<<< HEAD
+=======
+		    
+	<?php 
+
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "bwea";
+
+
+
+
+	//create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	//check connection
+
+	if($conn === false){
+	    die("ERROR: could not connect".mysqli_connect_error());
+	}
+
+
+
+
+
+	if(isset($_POST['submit']))
+	{
+	    $nm = $_POST['fnm'];
+	    $tel = $_POST['ftel'];
+	    $adrs = $_POST['fadrs'];
+	    $scl = $_POST['fscl'];
+	    $grd = $_POST['fgrd'];
+	    $cls = $_POST['fcls']; 
+
+	    if ($nm != '' || $tel != '' || $adrs != '' || $scl != '' || $grd != '' || $cls != '')
+	    {
+	       $sql = "INSERT INTO students (dnm, dtel, dadrs, dscl, dgrd, dcls) VALUES ('$nm', '$tel', '$adrs', '$scl', '$grd', '$cls')"; 
+
+
+
+	       mysqli_query($conn, $sql);
+
+
+
+
+
+	       echo "<br/> <span> Data inserted successfully</span>";
+	    }
+	    else
+	    {
+		echo "Insertion failed";
+	    }  
+	}		    
+	
+	?>
+		    
+		    
+		    
+		    
+		    
+
+<?php include("footer.php") ?>
+>>>>>>> fd1636a4fe1a1b08dc7888ff92a0c015843d931d
 
 
 
