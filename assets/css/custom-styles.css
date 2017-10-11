@@ -451,6 +451,9 @@ font-size: 19px;
     color: #fff;
     border-radius: 5px;    
 }
+
+
+
 .butt{
     width:8%;
 }
@@ -458,10 +461,13 @@ font-size: 19px;
     width:8%;
     padding: 10px;
 }
+/*.btn-long:hover {
+    width:10%;
+}
 .btn-default:hover {
 color: black;
 background-color: #bbb;
-}
+}*/
 .badd{
     background-color: #2e9afe;
 }

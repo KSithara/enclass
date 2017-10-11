@@ -130,6 +130,16 @@ function test_input($data) {
 
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
+
+            <!--div class="form-group">
+                <label for="name">Name</label>
+                <input class= "form-control" type="text" id="name" name="name" placeholder="Item name..">
+            </div>
+
+            <div class="form-group">
+                <label for="price">School</label>
+                <input class= "form-control" type="text" id="price" name="price" placeholder="Unit price..">
+            </div-->
             <div class="form-group">
                 <label>Name</label>
                 <input class="form-control" name="fnm" type="text" placeholder="Student name">
@@ -147,7 +157,6 @@ function test_input($data) {
                 <label>Grade</label>
                 <div class="form-group">
                     <select class="doropdown form-control" name="fgrd">
-                        <option>Select grade</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -212,10 +221,10 @@ if (isset($_POST["submit"])){
     // User Returned Database
     mysqli_query($con, $sql);
 
-        echo "<div>'Item  added succesfully.'</div>";
+        echo "<div class=\"wrong\">'Item was added succesfully.'</div>";
     }
     else{
-        echo "<div>'Fields  required!'</div>";
+        echo "<div class=\"wrong\">'Fields are required!'</div>";
 
     }
     // Close Connection
@@ -231,13 +240,3 @@ if (isset($_POST["submit"])){
 
 
 <?php include("footer.php") ?>
-
-
-
-
-
-
-
-
-
-//do verifications of the fields

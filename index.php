@@ -131,7 +131,7 @@
                                 Students per year
                             </div>
                             <div class="panel-body">
-                                <div id="morris-bar-chart"></div>
+                                <!--div id="morris-bar-chart"></div-->
                             </div>
                         </div>
                     </div>
