@@ -63,11 +63,12 @@
 
                     <div class="col-lg-4 col-lg-offset-4">
                         <div class="row">
-                            <form class="navbar-form" role="search">
+                            <form class="navbar-form" role="search" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                                 <div class="input-group add-on">
                                   <input class="form-control" placeholder="Enter the Student's name" name="srch-term" id="srch-term" type="text">
                                   <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    <button placeholder="Search" name="submit" class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i>
+                                    </button>
                                   </div>
                                 </div>
                             </form>
@@ -81,6 +82,59 @@
 
 
 
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "bwea";
+
+//create connection
+$conn = mysqli_connect($servername, $username, $password, $db);
+
+//check connection
+if($conn->connect_error){
+    die("Connection failed: ". $conn->connect_error);
+}
+
+
+
+
+if(isset($_POST['srch-term'])){$srch = test_input($_POST['srch-term']);};
+
+function test_input($data){
+    $data = trim($data);
+    $data = stripcslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+
+
+
+
+
+
+
+
+if (isset($_POST['submit'])){
+    $sql = "SELECT * FROM students WHERE dnm = '%$srch%'";
+
+    //retrieve from database
+    mysqli_query($conn, $sql);
+
+    echo "Successfully retrieved!";
+}else{
+    echo "Unsuccessfull";
+}
+
+?>
+
+
+
+
+
+  
                 <div class="row two">
                     <div class="panel panel-default col-sm-12">
                         <div class="panel-heading">
@@ -119,6 +173,13 @@
                              Basic information about students
                         </div>
                         <div class="panel-body">
+
+
+
+
+
+
+
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
@@ -129,6 +190,10 @@
                                     </thead>
                                     <tbody>
                                       <tr>
+                                        <td id="c">ID</td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
                                         <td id="c">Name</td>
                                         <td></td>
                                       </tr>
@@ -138,7 +203,7 @@
                                       </tr>
                                       <tr>
                                         <td id="c">Class</td>
-                                        <td>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</td>
+                                        <td></td>
                                       </tr>
                                       <tr>
                                         <td id="c">School</td>
@@ -156,15 +221,18 @@
 
                             </div>
                             <!-- /.row (nested) -->
-                        </div>
-                        <!-- /.panel-body -->
                     </div>
+                        <!-- /.panel-body -->
+                </div>
                     <!-- /.panel -->
 
 
 
                  
               
+
+
+
 
 
 <?php include("footer.php") ?>
@@ -176,6 +244,8 @@
 
 /*color should change to red when not paid and green when paid
   a box with paid date should be appear when hover the button */
+
+
 
 
 

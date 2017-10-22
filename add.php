@@ -80,45 +80,55 @@
 
 
 
-<?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "bwea";
 
-$con =new mysqli($host,$user,$pass,$db);
-if($con->connect_error){
-    die("Connection faild ".$con->connect_error);
-}
+
+<?php
+
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $db = "bwea";
+
+    $con =new mysqli($host,$user,$pass,$db);
+
+    if($con->connect_error){
+        die("Connection faild ".$con->connect_error);
+    }
+
 ?>
+
+
+
+
+
+
 <?php
-// define variables and set to empty values
 
-$boolean = TRUE;
-
-
-//$catname = $catdes =  ""; //$image  =
+    // define variables and set to empty values
+    $boolean = TRUE;
 
 
-if(isset($_POST["fnm"])){$nm = test_input($_POST["fnm"]);}
-if(isset($_POST["fscl"])){$scl = test_input($_POST["fscl"]);}
-if(isset($_POST["fgrd"])){$grd = test_input($_POST["fgrd"]);}
-if(isset($_POST["fcls"])){$cls = test_input($_POST["fcls"]);}
-if(isset($_POST["ftel"])){$tel = test_input($_POST["ftel"]);}
-if(isset($_POST["fadrs"])){$adrs = test_input($_POST["fadrs"]);}
+    //$catname = $catdes =  ""; //$image  =
+    if(isset($_POST["fnm"])){$nm = test_input($_POST["fnm"]);}
+    if(isset($_POST["fscl"])){$scl = test_input($_POST["fscl"]);}
+    if(isset($_POST["fgrd"])){$grd = test_input($_POST["fgrd"]);}
+    if(isset($_POST["fcls"])){$cls = test_input($_POST["fcls"]);}
+    if(isset($_POST["ftel"])){$tel = test_input($_POST["ftel"]);}
+    if(isset($_POST["fadrs"])){$adrs = test_input($_POST["fadrs"]);}
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-  //$image = test_input($_POST["image"]);
-}
+      //$image = test_input($_POST["image"]);
+    }
 
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
 ?>
 
 
@@ -198,28 +208,35 @@ function test_input($data) {
  
 
 
+
+
+
+
+
+
+
+
 <?php
 
-if (isset($_POST["submit"])){
+    if (isset($_POST["submit"])){
 
-    if((!empty($_POST["fnm"]))&&(!empty($_POST["fscl"]))&&(!empty($_POST["ftel"]))&&(!empty($_POST["fgrd"]))&&(!empty($_POST["fcls"]))&&(!empty($_POST["fadrs"]))) {
+        if((!empty($_POST["fnm"]))&&(!empty($_POST["fscl"]))&&(!empty($_POST["ftel"]))&&(!empty($_POST["fgrd"]))&&(!empty($_POST["fcls"]))&&(!empty($_POST["fadrs"]))) {
 
-    // Perform Database Query
-    $sql = "INSERT INTO students(dnm, dscl, dtel, dgrd, dcls, dadrs)
-	
-	VALUES ('$nm', '$scl', '$tel', '$grd', 'cls', '$adrs') ";
+        // Perform Database Query
+        $sql = "INSERT INTO students(dnm, dscl, dtel, dgrd, dcls, dadrs)
+        VALUES ('$nm', '$scl', '$tel', '$grd', 'cls', '$adrs') ";
 
-    // User Returned Database
-    mysqli_query($con, $sql);
+        // User Returned Database
+        mysqli_query($con, $sql);
 
-        echo "<div>'Item  added succesfully.'</div>";
+            echo "<div>'Item  added succesfully.'</div>";
+        }
+        else{
+            echo "<div>'Fields  required!'</div>";
+
+        }
+        // Close Connection
     }
-    else{
-        echo "<div>'Fields  required!'</div>";
-
-    }
-    // Close Connection
-}
 ?>
 
 

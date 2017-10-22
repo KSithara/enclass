@@ -449,17 +449,17 @@ font-size: 19px;
     text-align: center;
     padding: 8px;
     color: #fff;
-    border-radius: 5px;    
+    border-radius: 5px; 
+    cursor:pointer;   
 }
-
-
-
 .butt{
     width:8%;
+    cursor:pointer;
 }
 .btn-long{
     width:8%;
     padding: 10px;
+    cursor: pointer;
 }
 /*.btn-long:hover {
     width:10%;
